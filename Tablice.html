@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Tablice.css">
+	<title>Tablice</title>
+</head>
+<body>
+	<main>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="Project_2022.html">Dom</a></li>
+                    <li><a href="Kolory.html">Kolory</a></li>
+                    <li><a href="strona2.html">Daty</a></li>
+                    <li><a href="Tablice.html">Tablice</a></li>
+                    <li><a href="strona4.html">Pozycje</a></li>
+                    <li><a href="strona5.html">Galeria</a></li>
+                </ul>
+                <div class="line-base"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                
+            </nav>
+            
+        </div>
+        <div class="contener1">
+		<div id="parameters">
+			
+			<p>Opóźnienie kroku <span id="step-time">40</span>ms</p><input class="slider" id="step-time-slider" type="range" name="step-time" value=2000 min="0" max="10000">
+			<p>N = <span id="amount-of-data">100</span></p><input class="slider" id="amount-data-slider" type="range" name="step-time" value=100 min="0" max="1000" onchange="dataAmountChange()">
+		</div>
+		<canvas id="canvas" width="100%" height="1280"></canvas>
+        </div>
+	</main>
+	<script src="Tablice.js"></script>
+</body>
+</html>
